@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-sm-8">
+    <h1>{{question.title}}</h1>
+    <h5><em>{{question.date}}</em> by: {{question.author}}</h5>
+    <p>{{question.content}}</p>
+  </div>
+<br>
+</div>
+<button class="btn btn-danger"{{action 'deleteQuestion' question}}>Delete this Question</button>
