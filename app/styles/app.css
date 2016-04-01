@@ -2,6 +2,10 @@ body {
   background-color: lightslategrey;
 }
 
+.jumbotron {
+  margin: 0;
+}
+
 .display {
   border: 3px solid black;
   background-color: white;
@@ -13,6 +17,9 @@ body {
 }
 
 .btn-danger {
+  margin: 10px;
+}
+.btn-info {
   margin: 10px;
 }
 
