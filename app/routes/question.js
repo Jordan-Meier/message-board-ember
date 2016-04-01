@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       answers: this.store.findAll('answer')
     });
   },
-  actions: {
-    deleteQuestion
-  }
+  // actions: {
+  //   deleteQuestion
+  // }
 });
