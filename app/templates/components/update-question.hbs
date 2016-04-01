@@ -16,10 +16,10 @@
         {{textarea rows="8" cols="40" value=content id="content" placeholder=question.content class="form-control"}}
       </div>
 
-      <button {{action 'updateQuestion' question}}>Edit</button>
+      <button class="btn btn-success"{{action 'updateQuestion' question}}>Edit</button>
 
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Edit Question</button>
+  <button class="btn btn-info"{{action 'updateQuestionForm'}}>Edit Question</button>
 {{/if}}
