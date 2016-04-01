@@ -1,25 +1,26 @@
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
+
 <header>
-  <div class="jumbotron container-fluid">
-    <h1>Message Board</h1>
-  </div>
+  <h1>Message Board</h1>
 </header>
 
 <nav class="navbar navbar-inverse">
       <div class="container-fluid">
-        <!-- <div class='navbar-header'>
+        <div class='navbar-header'>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div> -->
+        </div>
         <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
           <li>{{#link-to 'index'}}Home{{/link-to}}</li>
           <!-- <li>{{#link-to 'about'}}About{{/link-to}}</li> -->
         </ul>
       </div>
     </nav>
+
 
 <div class="container">
   {{outlet}}

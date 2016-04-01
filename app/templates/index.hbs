@@ -1,11 +1,11 @@
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-7">
     {{#each model as |question|}}
       {{question-tile question=question}}
     {{/each}}
   </div>
 
-  <div class="col-md-6">
+  <div class="col-md-5">
     {{new-question saveQuestion="saveQuestion"}}
   </div>
 </div>
