@@ -7,7 +7,16 @@ export default Ember.Route.extend({
       answers: this.store.findAll('answer')
     });
   },
-  // actions: {
+  actions: {
+    updateQuestion(question, updateQInputs) {
+      Object.keys(updateQInputs).forEach(function(key) {
+        if(updateQInputs[key] !== undefined) {
+          question.set(key, updateQInputs[key]);
+        }
+      });
+      question.save();
+      this.transitionTo('question');
+    }
   //   deleteQuestion
-  // }
+  }
 });
