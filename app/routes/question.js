@@ -34,6 +34,25 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('question');
+    },
+    deleteAnswer(answer) {
+      // var question = answer.get('question');
+      // answer.destroyRecord().then(function() {
+      //   question.save();
+      // });
+      // this.transitionTo('question');
+      answer.destroyRecord();
+      this.transitionTo('question');
+    },
+    updateAnswer(answer, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          answer.set(key, params[key]);
+        }
+      });
+      answer.save();
+      this.transitionTo('question');
+
     }
   }
 });

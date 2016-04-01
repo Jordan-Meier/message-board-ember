@@ -4,25 +4,25 @@
     <p>{{answer.content}}</p>
 
 
-    <!-- {{#if updateCommentForm}}
+    {{#if updateAnswerForm}}
         <div>
           <form>
             <div class="form-group">
               <label for="author">Author</label>
-              {{input value=author id="author" placeholder=comment.author}}
+              {{input value=author id="author" placeholder=answer.author}}
             </div>
 
             <div class="form-group">
-              <label for="body">Type</label>
-              {{textarea rows="4" cols="30" value=body id="body" placeholder=comment.body}}
+              <label for="content">Content</label>
+              {{textarea rows="4" cols="30" value=content id="content" placeholder=answer.content}}
             </div>
-            <button {{action 'updateComment' comment}}>Save Comment</button>
+            <button {{action 'updateAnswer' answer}}>Save Answer</button>
           </form>
         </div>
     {{else}}
-        <button {{action 'updateCommentForm'}}>Edit Comment</button>
+        <button {{action 'updateAnswerForm'}}>Edit Answer</button>
     {{/if}}
 
-    <button {{action 'deleteComment' comment}}>Delete Comment</button> -->
+    <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
   {{/each}}
 </div>

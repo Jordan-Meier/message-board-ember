@@ -1,9 +1,11 @@
 {{question-detail question=model.questions deleteQuestion="deleteQuestion"}}
 
-
 {{update-question question=model.questions updateQuestion="updateQuestion"}}
-
-
+<br>
+<hr>
+<h3>Answers</h3>
+<hr>
+<br>
 {{add-answer answer=model.answers question=model.questions saveAnswer="saveAnswer"}}
 
-{{answer-tile answer=model.answers question=model.questions}}
+{{answer-tile answer=model.answers question=model.questions updateAnswer="updateAnswer" deleteAnswer="deleteAnswer"}}
