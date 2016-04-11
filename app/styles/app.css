@@ -32,3 +32,10 @@ body {
   padding: 10px;
   background-color: #f4f1e8;
 }
+
+.about {
+  border: 3px solid black;
+  margin: 15px;
+  padding: 10px;
+  background-color: #f4f1e8;
+}
